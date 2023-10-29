@@ -68,7 +68,7 @@ perhaps just as easy:
 ...             return getattr(self, attr) < getattr(other, attr)
 ...
 ...         def __eq__(self, other):
-...             return getattr(self, attr) <= getattr(other, attr)
+...             return getattr(self, attr) == getattr(other, attr)
 ...
 ...         cls.__lt__ = __lt__
 ...         cls.__eq__ = __eq__
